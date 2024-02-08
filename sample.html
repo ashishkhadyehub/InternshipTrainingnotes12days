@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+<style>
+  body{
+    background-color: gray;
+  }
+</style>
 <body>
-    <p id="test"></p>
+  <script>
+    console.log("Hello from on page JS..!");
 
+    class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+}
 
-    
-    <button onclick="test()">Alert Example</button>
-    <script>
-        let a = 10;
-        let b = 20;
-        console.log("This is my first JS Program");
-        console.log(a+b);
-
-        document.getElementById("test").innerHTML= a+b;
-        function test()
-        {
-            alert("Testing alert");
-        }
-
-        
-    </script>
+const myCar = new Car("Ford", 2014);
+console.log(myCar.name + "-" + myCar.year );
+console.log(myCar.year);
+  </script>
+  
 </body>
 </html>
